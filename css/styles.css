@@ -11857,7 +11857,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 /* Our Offices items */
 #office .office-item {
-  max-width: 26rem;
+  max-width: 35rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -11947,6 +11947,30 @@ section#contact form#contactForm :-ms-input-placeholder {
   opacity: 0.3;
 }
 /* End of Offices item */
+
+/* Amazing team background image */
+.amazing-team {
+  height: 80vh; /*from 70vh*/
+  padding-top: 10.5rem;
+  padding-bottom: 6rem;
+  text-align: center;
+  color: #fff;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("https://drive.google.com/uc?id=1FMR4G0pdZr-YC05gnsC5G9CPz2lBZIg5");
+  background-color: #cccccc;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.team-font {
+  color: #e98332;
+}
 
 /* Social Media icons */
 .orange-color {
