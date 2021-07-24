@@ -49,7 +49,7 @@
     <header class="contact-us">
       <div class="container">
         <div class="contact-us-heading text-uppercase">Contact us</div>
-        <a class="btn btn-primary btn-xl text-uppercase" href="#">Tell Us More</a>
+        <a class="btn btn-primary btn-xl text-uppercase" href="#contact">Tell Us More</a>
       </div>
     </header>
 
@@ -224,8 +224,9 @@
     <!-- Contact-->
     <section class="page-section" id="contact">
       <div class="container">
-        <div class="text-center">
-          <h2 class="section-heading text-uppercase">Contact Us</h2><br>
+        <div class="text-center mb-2">
+          <h2 class="section-heading text-uppercase" style="color: #e98332">Contact Us</h2>
+          <p class="text-white">Thinking of creating those digital marketing efforts to reality? Let’s talk. We can help.</p><br>
         </div>
         <!-- * * * * * * * * * * * * * * *-->
         <!-- * * SB Forms Contact Form * *-->
@@ -235,9 +236,16 @@
         <!-- https://startbootstrap.com/solution/contact-forms-->
         <!-- to get an API token!-->
         <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-          <div class="row align-items-stretch mb-5">
-            <div class="col-md-6">
-              <div class="form-group mb-md-3">
+          <div class="row g-5 align-items-stretch mb-2">
+
+            <div class="col-md-7">            
+              <div class="wrapper d-flex">
+              <div class="row">
+                <h3 class="text-white text-uppercase">Send us a message</h3>
+                <p class="text-white">To send us an email, you may use the form below.</p>
+              </div>
+            </div>
+              <div class="form-group mb-md-3 mt-2">
                 <!-- Name input-->
                 <label for="formGroupExampleInput" class="form-label text-white">Name</label>
                 <input
@@ -246,8 +254,22 @@
                   type="text"
                   placeholder="Your Name *"
                   data-sb-validations="required"
+                  style="height: 10px"
                 />
                 <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+              </div>
+              <div class="form-group mb-md-3">
+                <!-- Company input-->
+                <label for="formGroupExampleInput" class="form-label text-white">Company</label>
+                <input
+                  class="form-control"
+                  id="name"
+                  type="text"
+                  placeholder="Your Company name *"
+                  data-sb-validations="required"
+                  style="height: 10px"
+                />
+                <div class="invalid-feedback" data-sb-feedback="name:required">A company name is required.</div>
               </div>
               <div class="form-group mb-md-3">
                 <!-- Email address input-->
@@ -258,27 +280,29 @@
                   type="email"
                   placeholder="Your Email *"
                   data-sb-validations="required,email"
+                  style="height: 2vh;"
                 />
                 <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
                 <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
               </div>
               <div class="form-group mb-md-3">
                 <!-- Phone number input-->
-                <label for="formGroupExampleInput" class="form-label text-white">Phone Number</label>
+                <label for="formGroupExampleInput" class="form-label text-white">Contact Number</label>
                 <input
                   class="form-control"
                   id="phone"
                   type="tel"
                   placeholder="Your Phone *"
                   data-sb-validations="required"
+                  style="height: 2vh;"
                 />
                 <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
               </div>
-              <label for="formGroupExampleInput" class="form-label text-white"> Best time to call you</label>
-              <div class="form-group d-flex justify-content-around mb-md-3">
+              <label for="formGroupExampleInput" class="form-label text-white">Best time to call you</label>
+              <div class="form-group d-flex justify-content-around md-3 mb-0">
                 <!-- Time number input-->
                 <div>
-                <select id="inputState" class="form-select" style="width: 8rem; height: 3rem;">
+                <select id="inputState" class="form-select" style="width: 13rem; height: 2.2rem;">
                   <option selected>---</option>
                   <option>1</option>
                   <option>2</option>
@@ -296,7 +320,7 @@
                 <center><label for="formGroupExampleInput" class="form-label text-white"><small>Hour</small></label></center>
                 </div>
                 <div>
-                  <select id="inputState" class="form-select" style="width: 8rem; height: 3rem;">
+                  <select id="inputState" class="form-select" style="width: 13rem; height: 2.2rem;">
                     <option selected>---</option>
                     <option>00</option>
                     <option>10</option>
@@ -309,7 +333,7 @@
                   <center><label for="formGroupExampleInput" class="form-label text-white"><small>Minutes</small></label></center>
                   </div>
                   <div>
-                    <select id="inputState" class="form-select" style="width: 8rem; height: 3rem;">
+                    <select id="inputState" class="form-select" style="width: 13rem; height: 2.2rem;">
                       <option selected>---</option>
                       <option>AM</option>
                       <option>PM</option>
@@ -318,10 +342,10 @@
                     </div>
               </div>
               
-              <div class="form-group mb-md-3">
+              <div class="form-group mb-3 md-0">
                 <!-- Location select-->
                 <label for="formGroupExampleInput" class="form-label text-white">Location</label>
-                <select class="form-select" aria-label="Default select example" style="height: 3rem;">
+                <select class="form-select" aria-label="Default select example" style="height: 2.2rem;">
                   <option selected>---</option>
                   <option value="Albania">Albania</option>
                   <option value="Algeria">Algeria</option>
@@ -563,10 +587,10 @@
                   <option value="Zimbabwe">Zimbabwe</option>
                 </select>
               </div>
-              <div class="form-group mb-md-5">
+              <div class="form-group mb-md-3">
                 <!-- Subject select-->
                 <label for="formGroupExampleInput" class="form-label text-white">Subject</label>
-                <select class="form-select" aria-label="Default select example" style="height: 3rem;">
+                <select class="form-select" aria-label="Default select example" style="height: 2.4rem;">
                   <option selected>---</option>
                   <option value="I want to get more traffic to my website">I want to get more traffic to my website</option>
                   <option value="I need to increase my app's downloads">I need to increase my app's downloads</option>
@@ -579,22 +603,22 @@
                   <option value="My old provider sucks and I need a better one">My old provider sucks and I need a better one</option>
                 </select>
               </div>
-              <div class="form-group mb-md-0">
+              <div class="form-group mb-md-3">
                 <div class="form-group form-group-textarea mb-md-0">
                   <!-- Message input-->
                   <textarea
                     class="form-control"
                     id="message"
                     placeholder="Your Message *"
-                    data-sb-validations="required" rows="10"
+                    data-sb-validations="required" rows="5"
                   ></textarea>
                   <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
                 </div>
               </div>
             </div>
             <!-- Feel free to drop a line content-->
-            <div class="col-md-6">
-              <h4 class="text-white">Feel free to drop a line</h4>
+            <div class="col-md-5" style="font-size: medium;">
+              <h5 class="text-white">Feel free to drop a line</h5>
               <div class="d-flex flex-column mb-3 bg-secondary text-white" style="background-color: #C69963;">
               <div class="p-2"><p>For the safety of our employees & the community, we’ve asked our team to work from home
                 to help contain the spread of COVID-19 virus in the Philippines. For inquiries, you may contact our teams 
@@ -607,24 +631,12 @@
               <br>
                 Lhea &nbsp;&nbsp; – +639123456789
               </p></div>
-
-              <div class="align-self-start p-2"><strong>New Jersey, USA</strong>
-              <p>Princess - +639123456789</p></div>
-
-              <div class="align-self-start p-2"><strong>Australia </strong>
-                <p>Johnny - +639123456789</p></div>
-              
-              <div class="align-self-start p-2"><strong>Job Application & Background Verification:</strong>
-                <p>Catherine - +639123456789</p></div>
-
               <div class="align-self-start p-2"><strong>Other concerns (After Sales Support, Billing & Collection, etc.):</strong>
                 <p>Jessica - +639123456789</p></div>
-
-              <div class="p-3 mb-5" style="height: 30vh;">
-                <iframe src="https://www.google.com/maps/d/embed?mid=1ppMHpurNeXqpLwRqiT3CVA3jJtw"
-                class="w-100 h-100"></iframe>
               </div>
-            </div>
+              <div style="height: 34vh; width: 32rem;">
+                <iframe src="https://www.google.com/maps/d/embed?mid=1ppMHpurNeXqpLwRqiT3CVA3jJtw"
+                class="w-100 h-100"></iframe></div>
             </div>
           </div>
           
@@ -651,7 +663,7 @@
           </div>
           <!-- Submit Button-->
           <div class="text-center">
-            <button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">
+            <button class="btn btn-primary btn-lg text-uppercase disabled" id="submitButton" type="submit" style="float: left;">
               Send Message
             </button>
           </div>
