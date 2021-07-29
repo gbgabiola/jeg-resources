@@ -20,8 +20,8 @@
   <body id="page-top">
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand" href="#page-top"><img src="../img/logo.png" alt="Logo" /></a>
+      <div class="container-fluid" style="margin-left: 5%; margin-right: 5%">
+        <a class="navbar-brand" href="../index.html"><img src="../img/logo.png" alt="Logo" /></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -31,17 +31,18 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
+          Menu
           <i class="fas fa-bars ms-1"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
             <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="./about.html">About Us</a></li>
-            <li class="nav-item"><a class="nav-link" href="">Services</a></li>
-            <li class="nav-item"><a class="nav-link" href="./portfolio.html">Portfolio</a></li>
-            <li class="nav-item"><a class="nav-link" href="./careers.html">Careers</a></li>
-            <li class="nav-item"><a class="nav-link" href="./blog.html">Blog</a></li>
-            <li class="nav-item"><a class="nav-link" href="./contact.html">Contact Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
           </ul>
         </div>
       </div>
@@ -233,39 +234,35 @@
                   <p class="text-white">To send us an email, you may use the form below.</p>
                 </div>
               </div>
-              <div class="form-group mb-md-3 mt-2">
+              <div class="input-group input-group-lg flex-wrap mb-4">
                 <!-- Name input-->
-                <label for="formGroupExampleInput" class="form-label text-white"><i class="fas fa-user-alt"></i> Name</label>
+                <span class="input-group-text" id="addon-wrapping"><i class="fas fa-user-alt"></i></span>
                 <input
                   class="form-control"
                   id="name"
                   type="text"
-                  value="Juan Dela Cruz"
-                  placeholder="Your Name *"
+                  placeholder="Name *"
                   data-sb-validations="required"
-                  style="height: 10px"
                 />
                 <div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
               </div>
-              <div class="form-group mb-md-3">
+              <div class="input-group input-group-lg flex-wrap mb-4">
                 <!-- Email input-->
-                <label for="formGroupExampleInput" class="form-label text-white"><i class="fas fa-at"></i> Email Address</label>
+                <span class="input-group-text" id="addon-wrapping"><i class="fas fa-at"></i></span>
                 <input
                   class="form-control"
-                  id="name"
+                  id="email"
                   type="text"
-                  value="juandelacruz@example.com"
-                  placeholder="Your Email address *"
+                  placeholder="Email address *"
                   data-sb-validations="required"
-                  style="height: 10px"
                 />
-                <div class="invalid-feedback" data-sb-feedback="name:required">Email Address is required.</div>
+                <div class="invalid-feedback" data-sb-feedback="email:required">Email Address is required.</div>
               </div>
-              <div class="form-group mb-3 md-0">
+              <div class="input-group input-group-lg flex-wrap mb-4">
                 <!-- Country select-->
-                <label for="formGroupExampleInput" class="form-label text-white"><i class="fas fa-globe-asia"></i> Country</label>
-                <select class="form-select" aria-label="Default select example" style="height: 2.2rem">
-                  <option selected>---</option>
+                <span class="input-group-text" id="addon-wrapping"><i class="fas fa-globe-asia"></i></span>
+                <select class="form-select" id="country" aria-label="Default select example" data-sb-validations="required">
+                  <option selected disabled value="">Country</option>
                   <option value="Albania">Albania</option>
                   <option value="Algeria">Algeria</option>
                   <option value="American Samoa">American Samoa</option>
@@ -436,7 +433,7 @@
                   <option value="Papua New Guinea">Papua New Guinea</option>
                   <option value="Paraguay">Paraguay</option>
                   <option value="Peru">Peru</option>
-                  <option value="Philippines" selected>Philippines</option>
+                  <option value="Philippines">Philippines</option>
                   <option value="Pitcairn">Pitcairn</option>
                   <option value="Poland">Poland</option>
                   <option value="Portugal">Portugal</option>
@@ -506,25 +503,24 @@
                   <option value="Serbia">Serbia</option>
                   <option value="Zambia">Zambia</option>
                   <option value="Zimbabwe">Zimbabwe</option>
-                </select>
+                </select><div class="invalid-feedback" data-sb-feedback="country:required">Country is required.</div>
               </div>
-              <div class="form-group mb-md-3" id="contact">
+              <div class="input-group input-group-lg flex-wrap mb-4" id="contact">
                 <!-- Contact Number input-->
-                <label for="formGroupExampleInput" class="form-label text-white"><i class="far fa-address-book"></i> Phone Number</label>
+                <span class="input-group-text" id="addon-wrapping"><i class="far fa-address-book"></i></span>
                 <input
                   class="form-control"
                   id="name"
-                  type="text"
-                  placeholder="Your Phone number *"
-                  value="09123456789"
+                  type="number"
+                  placeholder="Phone number *"
                   data-sb-validations="required"
-                  style="height: 10px"
                 />
                 <div class="invalid-feedback" data-sb-feedback="name:required">Phone number is required.</div>
               </div>
               <div class="form-group mb-md-3">
                 <label for="formGroupExampleInput" class="form-label text-white"><i class="fas fa-envelope-open-text"></i> Message</label>
-                <div class="form-group form-group-textarea mb-md-0">
+                <div class="input-group input-group-lg flex-wrap mb-4">
+                  <span class="input-group-text" id="addon-wrapping"><i class="fas fa-envelope-open-text"></i></span>
                   <!-- Message input-->
                   <textarea
                     class="form-control"
@@ -533,11 +529,12 @@
                     aria-valuenow=""
                     data-sb-validations="required"
                     rows="5"
-                  >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </textarea>
+                  ></textarea>
                   <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
                 </div>
               </div>
             </div>
+
 
             <!-- Feel free to drop a line content-->
             

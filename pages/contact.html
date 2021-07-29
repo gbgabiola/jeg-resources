@@ -20,8 +20,8 @@
   <body id="page-top">
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand" href="#page-top"><img src="../img/logo.png" alt="Logo" /></a>
+      <div class="container-fluid" style="margin-left: 5%; margin-right: 5%">
+        <a class="navbar-brand" href="../index.html"><img src="../img/logo.png" alt="Logo" /></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -31,17 +31,18 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
+          Menu
           <i class="fas fa-bars ms-1"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
             <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="./about.html">About Us</a></li>
-            <li class="nav-item"><a class="nav-link" href="">Services</a></li>
-            <li class="nav-item"><a class="nav-link" href="./portfolio.html">Portfolio</a></li>
-            <li class="nav-item"><a class="nav-link" href="./careers.html">Careers</a></li>
-            <li class="nav-item"><a class="nav-link" href="./blog.html">Blog</a></li>
-            <li class="nav-item"><a class="nav-link" href="./contact.html">Contact Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
           </ul>
         </div>
       </div>
@@ -248,56 +249,52 @@
                   <p class="text-white">To send us an email, you may use the form below.</p>
                 </div>
               </div>
-              <div class="form-group mb-md-3 mt-2">
+              <div class="input-group input-group-lg flex-wrap mb-4">
                 <!-- Name input-->
-                <label for="formGroupExampleInput" class="form-label text-white">Name</label>
+                <span class="input-group-text" id="addon-wrapping"><i class="fas fa-user-alt"></i></span>
                 <input
                   class="form-control"
                   id="name"
                   type="text"
-                  placeholder="Your Name *"
+                  placeholder="Name *"
                   data-sb-validations="required"
-                  style="height: 10px"
                 />
-                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                <div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
               </div>
-              <div class="form-group mb-md-3">
+              <div class="input-group input-group-lg flex-wrap mb-4">
                 <!-- Company input-->
-                <label for="formGroupExampleInput" class="form-label text-white">Company</label>
+                <span class="input-group-text" id="addon-wrapping"><i class="fas fa-building"></i></span>
                 <input
                   class="form-control"
                   id="name"
                   type="text"
-                  placeholder="Your Company name *"
+                  placeholder="Company name *"
                   data-sb-validations="required"
-                  style="height: 10px"
                 />
                 <div class="invalid-feedback" data-sb-feedback="name:required">A company name is required.</div>
               </div>
-              <div class="form-group mb-md-3">
+              <div class="input-group input-group-lg flex-wrap mb-4">
                 <!-- Email address input-->
-                <label for="formGroupExampleInput" class="form-label text-white">Email</label>
+                <span class="input-group-text" id="addon-wrapping"><i class="fas fa-at"></i></span>
                 <input
                   class="form-control"
                   id="email"
                   type="email"
-                  placeholder="Your Email *"
+                  placeholder="Email *"
                   data-sb-validations="required,email"
-                  style="height: 2vh"
                 />
                 <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
                 <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
               </div>
-              <div class="form-group mb-md-3">
+              <div class="input-group input-group-lg flex-wrap mb-4">
                 <!-- Phone number input-->
-                <label for="formGroupExampleInput" class="form-label text-white">Contact Number</label>
+                <span class="input-group-text" id="addon-wrapping"><i class="far fa-address-book"></i></span>
                 <input
                   class="form-control"
                   id="phone"
                   type="tel"
-                  placeholder="Your Phone *"
+                  placeholder="Phone Number *"
                   data-sb-validations="required"
-                  style="height: 2vh"
                 />
                 <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
               </div>
@@ -305,57 +302,57 @@
               <div class="form-group d-flex justify-content-around md-3 mb-0">
                 <!-- Time number input-->
                 <div class="col-md-3">
-                  <select id="inputState" class="form-select">
-                    <option selected>---</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                    <option>6</option>
-                    <option>7</option>
-                    <option>8</option>
-                    <option>9</option>
-                    <option>10</option>
-                    <option>11</option>
-                    <option>12</option>
+                  <select id="inputState" class="form-select" aria-label="Default select example">
+                    <option selected disabled value="">---</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
                   </select>
                   <center>
                     <label for="formGroupExampleInput" class="form-label text-white"><small>Hour</small></label>
                   </center>
                 </div>
                 <div class="col-md-3">
-                  <select id="inputState" class="form-select">
-                    <option selected>---</option>
-                    <option>00</option>
-                    <option>10</option>
-                    <option>20</option>
-                    <option>30</option>
-                    <option>40</option>
-                    <option>50</option>
-                    <option>60</option>
+                  <select id="inputState" class="form-select" >
+                    <option selected disabled value="">---</option>
+                    <option value="00">00</option>
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                    <option value="30">30</option>
+                    <option value="40">40</option>
+                    <option value="50">50</option>
+                    <option value="60">60</option>
                   </select>
                   <center>
                     <label for="formGroupExampleInput" class="form-label text-white"><small>Minutes</small></label>
                   </center>
                 </div>
                 <div class="col-md-3">
-                  <select id="inputState" class="form-select">
-                    <option selected>---</option>
-                    <option>AM</option>
-                    <option>PM</option>
+                  <select id="inputState" class="form-select" >
+                    <option selected disabled value="">---</option>
+                    <option value="AM">AM</option>
+                    <option value="PM">PM</option>
                   </select>
                   <center>
-                    <label for="formGroupExampleInput" class="form-label text-white"><small>Am / Pm</small></label>
+                    <label for="formGroupExampleInput" id="phone" class="form-label text-white"><small>Am / Pm</small></label>
                   </center>
                 </div>
               </div>
 
-              <div class="form-group mb-3 md-0">
-                <!-- Location select-->
-                <label for="formGroupExampleInput" class="form-label text-white">Location</label>
-                <select class="form-select" aria-label="Default select example" style="height: 2.2rem">
-                  <option selected>---</option>
+              <div class="input-group input-group-lg flex-wrap mb-4">
+                <!-- Country select-->
+                <span class="input-group-text" id="addon-wrapping"><i class="fas fa-globe-asia"></i></span>
+                <select class="form-select" id="country" aria-label="Default select example" data-sb-validations="required">
+                  <option selected disabled value="">Country</option>
                   <option value="Albania">Albania</option>
                   <option value="Algeria">Algeria</option>
                   <option value="American Samoa">American Samoa</option>
@@ -468,7 +465,9 @@
                   <option value="Kazakhstan">Kazakhstan</option>
                   <option value="Kenya">Kenya</option>
                   <option value="Kiribati">Kiribati</option>
-                  <option value="Democratic People's Republic of Korea">Korea, Democratic People's Republic of</option>
+                  <option value="Democratic People's Republic of Korea">
+                    Korea, Democratic People's Republic of
+                  </option>
                   <option value="Korea">Korea, Republic of</option>
                   <option value="Kuwait">Kuwait</option>
                   <option value="Kyrgyzstan">Kyrgyzstan</option>
@@ -594,13 +593,13 @@
                   <option value="Serbia">Serbia</option>
                   <option value="Zambia">Zambia</option>
                   <option value="Zimbabwe">Zimbabwe</option>
-                </select>
+                </select><div class="invalid-feedback" data-sb-feedback="country:required">Country is required.</div>
               </div>
-              <div class="form-group mb-md-3">
+              <div class="input-group input-group-lg flex-wrap mb-4">
                 <!-- Subject select-->
-                <label for="formGroupExampleInput" class="form-label text-white">Subject</label>
-                <select class="form-select" aria-label="Default select example" style="height: 2.4rem">
-                  <option selected>---</option>
+                <span class="input-group-text" id="addon-wrapping"><i class="fas fa-question"></i></span>
+                <select class="form-select" aria-label="Default select example" id="subject" data-sb-validations="required">
+                  <option selected disabled value="">Subject Message</option>
                   <option value="I want to get more traffic to my website">
                     I want to get more traffic to my website
                   </option>
@@ -620,11 +619,12 @@
                   <option value="My old provider sucks and I need a better one">
                     My old provider sucks and I need a better one
                   </option>
-                </select>
+                </select><div class="invalid-feedback" data-sb-feedback="subject:required">Subject is required.</div>
               </div>
               <div class="form-group mb-md-3">
-                <div class="form-group form-group-textarea mb-md-0">
+                <div class="input-group input-group-lg flex-wrap mb-4">
                   <!-- Message input-->
+                  <span class="input-group-text" id="addon-wrapping"><i class="fas fa-envelope-open-text"></i></span>
                   <textarea
                     class="form-control"
                     id="message"
