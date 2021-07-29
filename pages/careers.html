@@ -207,15 +207,16 @@
     </section>
 
     <!-- Contact-->
+    
     <section class="page-section" id="contact">
       <div class="container">
-        <div class="text-center mb-2">
+        <!-- <div class="text-center mb-2">
           <h2 class="section-heading text-uppercase" style="color: #e98332">Contact Us</h2>
           <p class="text-white">
             Thinking of creating those digital marketing efforts to reality? Let’s talk. We can help.
           </p>
           <br />
-        </div>
+        </div> -->
         <!-- * * * * * * * * * * * * * * *-->
         <!-- * * SB Forms Contact Form * *-->
         <!-- * * * * * * * * * * * * * * *-->
@@ -224,7 +225,7 @@
         <!-- https://startbootstrap.com/solution/contact-forms-->
         <!-- to get an API token!-->
         <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-          <div class="row g-5 align-items-stretch mb-2">
+          <div class="d-flex flex-column justify-content-center align-items-center">
             <div class="col-md-7">
               <div class="wrapper d-flex">
                 <div class="row">
@@ -234,110 +235,35 @@
               </div>
               <div class="form-group mb-md-3 mt-2">
                 <!-- Name input-->
-                <label for="formGroupExampleInput" class="form-label text-white">Name</label>
+                <label for="formGroupExampleInput" class="form-label text-white"><i class="fas fa-user-alt"></i> Name</label>
                 <input
                   class="form-control"
                   id="name"
                   type="text"
+                  value="Juan Dela Cruz"
                   placeholder="Your Name *"
                   data-sb-validations="required"
                   style="height: 10px"
                 />
-                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                <div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
               </div>
               <div class="form-group mb-md-3">
-                <!-- Company input-->
-                <label for="formGroupExampleInput" class="form-label text-white">Company</label>
+                <!-- Email input-->
+                <label for="formGroupExampleInput" class="form-label text-white"><i class="fas fa-at"></i> Email Address</label>
                 <input
                   class="form-control"
                   id="name"
                   type="text"
-                  placeholder="Your Company name *"
+                  value="juandelacruz@example.com"
+                  placeholder="Your Email address *"
                   data-sb-validations="required"
                   style="height: 10px"
                 />
-                <div class="invalid-feedback" data-sb-feedback="name:required">A company name is required.</div>
+                <div class="invalid-feedback" data-sb-feedback="name:required">Email Address is required.</div>
               </div>
-              <div class="form-group mb-md-3">
-                <!-- Email address input-->
-                <label for="formGroupExampleInput" class="form-label text-white">Email</label>
-                <input
-                  class="form-control"
-                  id="email"
-                  type="email"
-                  placeholder="Your Email *"
-                  data-sb-validations="required,email"
-                  style="height: 2vh"
-                />
-                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-              </div>
-              <div class="form-group mb-md-3">
-                <!-- Phone number input-->
-                <label for="formGroupExampleInput" class="form-label text-white">Contact Number</label>
-                <input
-                  class="form-control"
-                  id="phone"
-                  type="tel"
-                  placeholder="Your Phone *"
-                  data-sb-validations="required"
-                  style="height: 2vh"
-                />
-                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-              </div>
-              <label for="formGroupExampleInput" class="form-label text-white">Best time to call you</label>
-              <div class="form-group d-flex justify-content-around md-3 mb-0">
-                <!-- Time number input-->
-                <div class="col-md-3">
-                  <select id="inputState" class="form-select">
-                    <option selected>---</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                    <option>6</option>
-                    <option>7</option>
-                    <option>8</option>
-                    <option>9</option>
-                    <option>10</option>
-                    <option>11</option>
-                    <option>12</option>
-                  </select>
-                  <center>
-                    <label for="formGroupExampleInput" class="form-label text-white"><small>Hour</small></label>
-                  </center>
-                </div>
-                <div class="col-md-3">
-                  <select id="inputState" class="form-select">
-                    <option selected>---</option>
-                    <option>00</option>
-                    <option>10</option>
-                    <option>20</option>
-                    <option>30</option>
-                    <option>40</option>
-                    <option>50</option>
-                    <option>60</option>
-                  </select>
-                  <center>
-                    <label for="formGroupExampleInput" class="form-label text-white"><small>Minutes</small></label>
-                  </center>
-                </div>
-                <div class="col-md-3">
-                  <select id="inputState" class="form-select">
-                    <option selected>---</option>
-                    <option>AM</option>
-                    <option>PM</option>
-                  </select>
-                  <center>
-                    <label for="formGroupExampleInput" class="form-label text-white"><small>Am / Pm</small></label>
-                  </center>
-                </div>
-              </div>
-
               <div class="form-group mb-3 md-0">
-                <!-- Location select-->
-                <label for="formGroupExampleInput" class="form-label text-white">Location</label>
+                <!-- Country select-->
+                <label for="formGroupExampleInput" class="form-label text-white"><i class="fas fa-globe-asia"></i> Country</label>
                 <select class="form-select" aria-label="Default select example" style="height: 2.2rem">
                   <option selected>---</option>
                   <option value="Albania">Albania</option>
@@ -452,7 +378,9 @@
                   <option value="Kazakhstan">Kazakhstan</option>
                   <option value="Kenya">Kenya</option>
                   <option value="Kiribati">Kiribati</option>
-                  <option value="Democratic People's Republic of Korea">Korea, Democratic People's Republic of</option>
+                  <option value="Democratic People's Republic of Korea">
+                    Korea, Democratic People's Republic of
+                  </option>
                   <option value="Korea">Korea, Republic of</option>
                   <option value="Kuwait">Kuwait</option>
                   <option value="Kyrgyzstan">Kyrgyzstan</option>
@@ -508,7 +436,7 @@
                   <option value="Papua New Guinea">Papua New Guinea</option>
                   <option value="Paraguay">Paraguay</option>
                   <option value="Peru">Peru</option>
-                  <option value="Philippines">Philippines</option>
+                  <option value="Philippines" selected>Philippines</option>
                   <option value="Pitcairn">Pitcairn</option>
                   <option value="Poland">Poland</option>
                   <option value="Portugal">Portugal</option>
@@ -580,93 +508,46 @@
                   <option value="Zimbabwe">Zimbabwe</option>
                 </select>
               </div>
-              <div class="form-group mb-md-3">
-                <!-- Subject select-->
-                <label for="formGroupExampleInput" class="form-label text-white">Subject</label>
-                <select class="form-select" aria-label="Default select example" style="height: 2.4rem">
-                  <option selected>---</option>
-                  <option value="I want to get more traffic to my website">
-                    I want to get more traffic to my website
-                  </option>
-                  <option value="I need to increase my app's downloads">I need to increase my app's downloads</option>
-                  <option value="I want to increase my web/mobile app's conversion rate">
-                    I want to increase my web/mobile app's conversion rate
-                  </option>
-                  <option value="I want to redesign my website">I want to redesign my website</option>
-                  <option value="I want to increase my team's efficiency using digital solutions you can offer">
-                    I want to increase my team's efficiency using digital solutions you can offer
-                  </option>
-                  <option value="I want an e-commerce site developed">I want an e-commerce site developed</option>
-                  <option value="I have a new online/mobile start-up and need help in setting it up">
-                    I have a new online/mobile start-up and need help in setting it up
-                  </option>
-                  <option value="I need a mobile application developed">I need a mobile application developed</option>
-                  <option value="My old provider sucks and I need a better one">
-                    My old provider sucks and I need a better one
-                  </option>
-                </select>
+              <div class="form-group mb-md-3" id="contact">
+                <!-- Contact Number input-->
+                <label for="formGroupExampleInput" class="form-label text-white"><i class="far fa-address-book"></i> Phone Number</label>
+                <input
+                  class="form-control"
+                  id="name"
+                  type="text"
+                  placeholder="Your Phone number *"
+                  value="09123456789"
+                  data-sb-validations="required"
+                  style="height: 10px"
+                />
+                <div class="invalid-feedback" data-sb-feedback="name:required">Phone number is required.</div>
               </div>
               <div class="form-group mb-md-3">
+                <label for="formGroupExampleInput" class="form-label text-white"><i class="fas fa-envelope-open-text"></i> Message</label>
                 <div class="form-group form-group-textarea mb-md-0">
                   <!-- Message input-->
                   <textarea
                     class="form-control"
                     id="message"
                     placeholder="Your Message *"
+                    aria-valuenow=""
                     data-sb-validations="required"
                     rows="5"
-                  ></textarea>
+                  >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </textarea>
                   <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
                 </div>
               </div>
             </div>
+
             <!-- Feel free to drop a line content-->
-            <div class="col-md-5" style="font-size: medium">
-              <h5 class="text-white">Feel free to drop a line</h5>
-              <div class="d-flex flex-column mb-3 bg-secondary text-white" style="background-color: #c69963">
-                <div class="p-2">
-                  <p>
-                    For the safety of our employees & the community, we’ve asked our team to work from home to help
-                    contain the spread of COVID-19 virus in the Philippines. For inquiries, you may contact our teams
-                    directly on their mobile phones or you may use the form on this page. We will be able to answer your
-                    calls from Mondays to Fridays 9am to 6pm.
-                  </p>
-                </div>
-                <div class="align-self-start p-2">
-                  <strong>Sales Inquiries & New Accounts:</strong>
-                  <br />
-                  <p>
-                    Kattie&nbsp; – +639123456789
-                    <br />
-                    Lhea &nbsp;&nbsp; – +639123456789
-                  </p>
-                </div>
-                <div class="align-self-start p-2">
-                  <strong>Other concerns (After Sales Support, Billing & Collection, etc.):</strong>
-                  <p>Jessica - +639123456789</p>
-                </div>
-              </div>
-              <div style="height: 34vh; width: 100%">
-                <iframe
-                  src="https://www.google.com/maps/d/embed?mid=1ppMHpurNeXqpLwRqiT3CVA3jJtw"
-                  class="w-100 h-100"
-                ></iframe>
-              </div>
-            </div>
-          </div>
+            
 
           <!-- Submit success message-->
-          <!---->
           <!-- This is what your users will see when the form-->
           <!-- has successfully submitted-->
           <div class="d-none" id="submitSuccessMessage">
             <div class="text-center text-white mb-3">
-              <div class="fw-bolder">Form submission successful!</div>
-              To activate this form, sign up at
-              <br />
-              <a href="https://startbootstrap.com/solution/contact-forms"
-                >https://startbootstrap.com/solution/contact-forms</a
-              >
+              <div class="fw-bolder">Thank you we will contact you as soon as possible</div>
             </div>
           </div>
           <!-- Submit error message-->
@@ -710,7 +591,7 @@
             <li class="col-md-2">
               <h5>Portfolio</h5>
               <ul style="list-style: none; padding: 0">
-                <li><a href="" style="text-decoration: none; color: #ffffff">Erick Galileo</a></li>
+                <li><a href="https://ecogalileo.github.io/portfolio/" style="text-decoration: none; color: #ffffff">Erick Galileo</a></li>
                 <li><a href="" style="text-decoration: none; color: #ffffff">Genesis Gabiola</a></li>
                 <li><a href="" style="text-decoration: none; color: #ffffff">Justine Micarandayo</a></li>
               </ul>
